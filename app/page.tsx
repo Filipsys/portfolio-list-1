@@ -2,21 +2,21 @@ import Image from "next/image";
 
 function App() {
   return (
-    <div className="w-screen bg-gray-200 text-zinc-800 flex flex-col">
+    <div className="flex w-screen flex-col bg-gray-200 text-zinc-800">
       <div className="flex flex-row">
         <div className="w-1/2 p-12 pr-8">
           <div>
-            <h2 className="font-bold text-2xl">Krosser</h2>
+            <h2 className="text-2xl font-bold">Krosser</h2>
           </div>
 
-          <div className="h-full flex items-center">
-            <h1 className="text-7xl pt-12">
+          <div className="flex h-full items-center">
+            <h1 className="pt-12 text-7xl">
               The World's Leading Anti-Fraud Platform for Financial Institutions
             </h1>
           </div>
         </div>
 
-        <div className="w-1/2 p-12 flex flex-col">
+        <div className="flex w-1/2 flex-col p-12">
           <nav className="flex flex-row gap-16 underline-offset-4">
             <ul>
               <li>
@@ -71,7 +71,7 @@ function App() {
             </ul>
           </nav>
 
-          <div className="flex items-end h-full">
+          <div className="flex h-full items-end">
             <h3 className="text-2xl">
               Cutting-edge fraud detection and prevention tools designed
               specifically for financial institutions. Real-time protection for
@@ -82,8 +82,8 @@ function App() {
         </div>
       </div>
 
-      <div className=" flex mt-12 items-center p-4">
-        <div className="w-[150vw] flex flex-row gap-4">
+      <div className="mt-12 flex items-center p-4">
+        <div className="flex w-[150vw] flex-row gap-4">
           <div className="relative">
             <Image
               src="/images/front-img-1.jpg"
@@ -92,7 +92,7 @@ function App() {
               height={700}
               className="aspect-[9/16] object-cover brightness-50"
             />
-            <p className="absolute top-0 right-0 p-4 text-right w-3/4 text-white">
+            <p className="absolute right-0 top-0 w-3/4 p-4 text-right text-white">
               No need to worry about fraud, take your business performance to
               the next stage.
             </p>
@@ -106,7 +106,7 @@ function App() {
               className="aspect-[9/16] object-cover brightness-50"
             />
 
-            <p className="absolute top-0 right-0 p-4 text-right w-3/4 text-white">
+            <p className="absolute right-0 top-0 w-3/4 p-4 text-right text-white">
               Finance in ease, no more hassle. Krosser is the best choice for
               your organization.
             </p>
@@ -121,7 +121,7 @@ function App() {
               className="aspect-[9/16] object-cover brightness-50"
             />
 
-            <p className="absolute top-0 right-0 p-4 text-right w-3/4 text-white">
+            <p className="absolute right-0 top-0 w-3/4 p-4 text-right text-white">
               Less time stressing spent on meetings, more time on your business.
             </p>
           </div>
@@ -130,23 +130,23 @@ function App() {
 
       <div className="flex flex-col p-12">
         <div>
-          <h2 className="text-7xl pb-12 w-2/3">
+          <h2 className="w-2/3 pb-12 text-7xl">
             Single Subscription, One Comprehensive Platform, Zero Hassle
           </h2>
         </div>
 
         <div className="flex flex-row">
-          <div className="grid grid-cols-2 grid-rows-2 w-1/3 p-4 ">
+          <div className="grid w-1/3 grid-cols-2 grid-rows-2 p-4">
             <div />
             <div />
-            <div className="flex items-end text-l ">
+            <div className="text-l flex items-end">
               See our platform in action and discover how it elevates your fraud
               prevention effortlessly.
             </div>
             <div />
           </div>
 
-          <div className="flex flex-col gap-8 w-2/3 *:text-4xl p-4">
+          <div className="flex w-2/3 flex-col gap-8 p-4 *:text-4xl">
             <p>
               Maintaining multiple payment systems is complex and error-prone.
               Our platform unifies everything, making transactions seamless and
@@ -160,8 +160,8 @@ function App() {
         </div>
       </div>
 
-      <div className="flex flex-col p-12 bg-gray-300">
-        <div className="grid grid-cols-5 grid-rows-2 w-full *:p-2">
+      <div className="flex flex-col bg-gray-300 p-12">
+        <div className="grid w-full grid-cols-5 grid-rows-2 *:p-2">
           <div>
             <h2>Trusted by thousands, including our esteemed gold partners.</h2>
           </div>
@@ -226,10 +226,10 @@ function App() {
         </div>
       </div>
 
-      <div className="w-screen bg-gray-200 flex flex-col gap-12 p-12">
-        <div className="w-full flex flex-row gap-12">
-          <div className="w-full h-96">
-            <h3 className="text-6xl py-6">
+      <div className="flex w-screen flex-col gap-12 bg-gray-200 p-12">
+        <div className="flex w-full flex-row gap-12">
+          <div className="h-96 w-full">
+            <h3 className="py-6 text-6xl">
               Round-the-Clock Support for Uninterrupted Security
             </h3>
             <p className="text-xl">
@@ -239,7 +239,7 @@ function App() {
               and maximizing operational security.
             </p>
           </div>
-          <div className="w-full h-96">
+          <div className="h-96 w-full">
             <Image
               src="/images/other-img-1.jpg"
               alt="Server image"
@@ -250,8 +250,8 @@ function App() {
           </div>
         </div>
 
-        <div className="w-full flex flex-row gap-12">
-          <div className="w-full h-96">
+        <div className="flex w-full flex-row gap-12">
+          <div className="h-96 w-full">
             <Image
               src="/images/other-img-2.jpg"
               alt="Processor image"
@@ -260,8 +260,8 @@ function App() {
               style={{ width: "100%", height: "100%" }}
             />
           </div>
-          <div className="w-full h-96">
-            <h3 className="text-6xl py-6">
+          <div className="h-96 w-full">
+            <h3 className="py-6 text-6xl">
               Advanced Fraud Detection with AI-Driven Precision
             </h3>
             <p className="text-xl">
@@ -275,17 +275,17 @@ function App() {
         </div>
       </div>
 
-      <div className="w-screen bg-gradient-to-t from-gray-300 to-gray-200 flex flex-row justify-between p-12 text-gray-400">
+      <div className="flex w-screen flex-row justify-between bg-gradient-to-t from-gray-300 to-gray-200 p-12 text-gray-400">
         <h3 className="text-xl">Krosser</h3>
 
         <div className="flex flex-row gap-4">
-          <p className="hover:underline underline-offset-4">
+          <p className="underline-offset-4 hover:underline">
             <a href="#">Terms and conditions</a>
           </p>
-          <p className="hover:underline underline-offset-4">
+          <p className="underline-offset-4 hover:underline">
             <a href="#">Privacy policy</a>
           </p>
-          <p className="hover:underline underline-offset-4">
+          <p className="underline-offset-4 hover:underline">
             <a href="#">Cookie policy</a>
           </p>
         </div>
